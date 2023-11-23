@@ -1,5 +1,5 @@
 # BUILDING ENERGY CONSUMPTION PREDICTOR (BECP)
-    ...less energy for more future!
+    ...less energy, more future!
 Introduction
 ----------------------
 How much energy will a building consume? This is the question that the Building Energy Consumption Predictor (BECP) model aims to answer. 
@@ -97,13 +97,13 @@ Repository structure
     ├── 01_notebooks                        <- Folder for Jupyter code notebooks
         ├── data                            <- Folder for data files 
             ├── .gitignore                  <- Files to ignore
-            ├── 01_healthcare_train_df      <- Export from Jupyter file, includes the 'Healthcare' category subset
+            ├── 01_healthcare_train_df.csv  <- Export from Jupyter file, includes the 'Healthcare' category subset
         ├── .DS_Store                       <- ?
         ├── .gitignore                      <- Files to ignore
         ├── Capstone_BECP.ipynb             <- Capstone Jupyter lab file, includes files merging, subset dataframe and EDA
     ├── 02_presentations                    <- Folder for Capstone's presentations
         ├── .gitignore                      <- Files to ignore
-        ├── Sprint01_BECP_presentation.ppt  <- Presentation for Sprint 1     
+        ├── Sprint01_BECP.pdf               <- Presentation for Sprint 1     
     ├── .DS_Store                           <- ?
     ├── .gitignore                          <- Files to ignore
     ├── README.md                           <- Explanation of how to navigate the code in the repository.

@@ -92,8 +92,6 @@ The final outcome or summary derived from the analysis of data
 
 Repository structure
 ----------------------
-*Explain what files does what*
-
     ├── 01_notebooks                        <- Folder for Jupyter code notebooks
         ├── data                            <- Folder for data files 
             ├── .gitignore                  <- Files to ignore

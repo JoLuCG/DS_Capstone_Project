@@ -47,10 +47,13 @@ This dataset provides a valuable resource for analyzing energy consumption trend
 
 Dictionary
 ----------------------
+**Target / dependent variable**
+- `meter_reading`, the target variable. Energy consumption in kWh (or equivalent).
+
+**Predictor / independent variables**
 - `building_id`, foreign key for the building metadata.
 - `meter`, the  meter id code. Read as {0: electricity, 1: chilled water, 2: steam, 3: hot water}.  Not every building has all meter types.
 - `meter_timestamp`, when the measurement was taken. Same as `weather_timestamp`.
-- `meter_reading`, the target variable. Energy consumption in kWh (or equivalent).
 - `site_id`, foreign key for the weather files.
 - `primary_use`, indicator of the primary category of activities for the building.
 - `square_feet`, gross floor area of the building in ft2.
@@ -67,27 +70,22 @@ Dictionary
 
 Data wrangling
 ----------------------
-***To be completed***.\
-The process of transforming and structuring data from one raw form into a desired format with the intent of improving data quality and making it more consumable and useful for analytics or machine learning, included the following actions:
+This section initiates the transformation and structuring of data from its raw form into a preferred format, aiming to enhance data quality and usability for analytics or machine learning purposes. It encompasses tasks such as data loading, dataset cleansing, reviewing null values to determine their removal or treatment, and identifying and managing duplicate rows.
 
 Exploratory data analysis
 ----------------------
-***To be completed***.\
-The analysis and investigation of the datasets, included the following actions:
+The exploration of datasets involved thorough analysis, incorporating data visualizations. These visuals play a crucial role by simplifying intricate information into an easily digestible format, facilitating quick identification of patterns, trends, and relationships within the data. Specifically focusing on numerical columns, with 'Reviewer_Score' as the primary point of interest, these visualizations aim to extract insights.
 
 Statistics
 ----------------------
-***To be completed***.\
-When gather, review, analyze, and draw conclusions from data, as well as apply quantified mathematical models to appropriate variables, the following actions were taken:
+Statistical analysis will help reveal patterns, relationships, and trends crucial for understanding customer preferences and guiding decisions to enhance hotel service and satisfaction. Tasks like column correlation, heatmap visualization, and seeking correlation coefficients will be conducted for this purpose.
 
 Modeling
 ----------------------
-***To be completed***.\
-The process of creating and using mathematical or computational models to understand, analyze, and make predictions or decisions based on data, involved the following steps:
+The process of creating and using mathematical or computational models to understand, analyze, and make predictions or decisions based on data, involved the following steps: time series analysis. 
 
 Conclusions
 ----------------------
-***To be completed***.\
 The final outcome or summary derived from the analysis of data
 
 Repository structure
@@ -98,10 +96,12 @@ Repository structure
             ├── 01_healthcare_train_df.csv  <- Export from Jupyter file, includes the 'Healthcare' category subset
         ├── .DS_Store                       <- ?
         ├── .gitignore                      <- Files to ignore
-        ├── Capstone_BECP.ipynb             <- Capstone Jupyter lab file, includes files merging, subset dataframe and EDA
+        ├── Sprint_1_Capstone_BECP.ipynb    <- Capstone Jupyter file, includes files merging, subset dataframe and EDA
+        ├── Sprint_2_Capstone_BECP.ipynb    <- Capstone Jupyter file, includes more advanced preprocessing, EDA and baseline model creation.      
     ├── 02_presentations                    <- Folder for Capstone's presentations
         ├── .gitignore                      <- Files to ignore
-        ├── Sprint01_BECP.pdf               <- Presentation for Sprint 1     
+        ├── Sprint_1_BECP.pdf               <- Presentation for Sprint 1
+        ├── Sprint_2_BECP.pdf               <- Presentation for Sprint 2         
     ├── .DS_Store                           <- ?
     ├── .gitignore                          <- Files to ignore
     ├── README.md                           <- Explanation of how to navigate the code in the repository.

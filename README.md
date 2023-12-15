@@ -48,11 +48,11 @@ This dataset provides a valuable resource for analyzing energy consumption trend
 Dictionary
 ----------------------
 **Target / dependent variable**
-- `meter_reading`, the target variable. Energy consumption in kWh (or equivalent).
+- `meter_reading`, the target variable. Energy consumption in kWh.
 
 **Predictor / independent variables**
 - `building_id`, foreign key for the building metadata.
-- `meter`, the  meter id code. Read as {0: electricity, 1: chilled water, 2: steam, 3: hot water}.  Not every building has all meter types.
+- `meter_type`, the  meter id code. Read as {0: electricity, 1: chilled water, 2: steam, 3: hot water}.  Not every building has all meter types.
 - `meter_timestamp`, when the measurement was taken. Same as `weather_timestamp`.
 - `site_id`, foreign key for the weather files.
 - `primary_use`, indicator of the primary category of activities for the building.
@@ -82,11 +82,13 @@ Statistical analysis will help reveal patterns, relationships, and trends crucia
 
 Modeling
 ----------------------
-The process of creating and using mathematical or computational models to understand, analyze, and make predictions or decisions based on data, involved the following steps: time series analysis. 
+Modeling, including time series analysis, plays a critical role in uncovering patterns, predicting outcomes, and pinpointing crucial factors affecting the target variable, providing valuable insights for decision-making. In the context of this energy consumption prediction model for buildings, incorporating time series analysis optimizes efficiency and informs decisions for sustainable building management.
+
+Time series analysis was selected due to the dataset's sequence of energy consumption observations indexed by hourly timestamps. Its objective is to forecast future energy consumption patterns by leveraging historical data.
 
 Conclusions
 ----------------------
-The final outcome or summary derived from the analysis of data
+The Trend-Seasonal Decomposition analysis highlights distinct features: a slight upward trend evident before and after May, coupled with a plateau during this period. Daily variations remain consistent, as demonstrated in the seasonal plot. However, the residual component showcases irregular patterns with no clear trend and displays changing variance, indicating heteroscedasticity within the dataset.
 
 Repository structure
 ----------------------

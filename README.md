@@ -113,7 +113,6 @@ Keep in mind that the notebooks should be executed in ascending order by name, a
         ├── data                            <- Folder for data files 
             ├── .gitignore                  <- Files to ignore
             ├── 01_healthcare_train_df.csv  <- Export from Jupyter file, includes the 'Healthcare' category subset
-        ├── .DS_Store                       <- ?
         ├── .gitignore                      <- Files to ignore
         ├── 01_dataset_filtering.ipynb      <- Capstone Jupyter file, includes data wrangling, merging and filtering. 
         ├── 02_EDA_stats.ipynb              <- Capstone Jupyter file, includes data preprocessing, EDA and statistical analysis.
@@ -124,6 +123,5 @@ Keep in mind that the notebooks should be executed in ascending order by name, a
         ├── Sprint_1_BECP.pdf               <- Presentation for Sprint 1
         ├── Sprint_2_BECP.pdf               <- Presentation for Sprint 2
         ├── Sprint_3_BECP.pdf               <- Presentation for Sprint 3      
-    ├── .DS_Store                           <- ?
     ├── .gitignore                          <- Files to ignore
     ├── README.md                           <- Explanation of how to navigate the code in the repository.

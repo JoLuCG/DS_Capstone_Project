@@ -104,6 +104,10 @@ Conclusions
 ----------------------
 The project concludes with the determination that among the models analyzed, the Random Forest Regressor stands out with the lowest Mean Absolute Error (MAE). This finding signifies its efficacy as the most reliable model for predicting electricity consumption in healthcare buildings. Notably, through analysis, it becomes evident that features linked to thermal comfort, such as dew and air temperature, play a pivotal role in influencing energy consumption patterns within these structures. Understanding and prioritizing these comfort-related features are pivotal for accurate predictions and informed decisions towards enhancing energy efficiency in healthcare buildings.
 
+Demo
+----------------------
+A healthcare building electricity consumption prediction app was created using Streamlit. This tool offers a streamlined way to swiftly create an intuitive and interactive interface. Its simplicity enables user-friendly navigation, and real-time visualization of predictions, empowering users to easily input data and observe predicted electricity consumption. 
+
 Repository structure
 ---------------------
 Keep in mind that the notebooks should be executed in ascending order by name, as each one generates CSV files utilized in the subsequent notebooks.
@@ -122,6 +126,10 @@ Keep in mind that the notebooks should be executed in ascending order by name, a
         ├── .gitignore                      <- Files to ignore
         ├── Sprint_1_BECP.pdf               <- Presentation for Sprint 1
         ├── Sprint_2_BECP.pdf               <- Presentation for Sprint 2
-        ├── Sprint_3_BECP.pdf               <- Presentation for Sprint 3      
+        ├── Sprint_3_BECP.pdf               <- Presentation for Sprint 3
+    ├── 03_demo                             <- Folder for Capstone's demo using Streamlit
+        ├── 05_becp_rf_reg.pkl              <- Trained Random Forest Regressor model as a .pkl file
+        ├── 05_BECP_web_app.py              <- Streamlit code
+        ├── data_BECP.csv                   <- Dataset used for the model      
     ├── .gitignore                          <- Files to ignore
     ├── README.md                           <- Explanation of how to navigate the code in the repository.
